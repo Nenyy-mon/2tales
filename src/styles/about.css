@@ -1,0 +1,38 @@
+.midtopPart {
+  width: 100vw;
+  height: 15vh;
+  background-image: url("../assets/images/extension.png");
+  background-position: center;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+.midtopPart::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.635);
+  width: 100%;
+  height: auto;
+  backdrop-filter: blur(10px);
+  height: 15vh;
+}
+
+.slider {
+  overflow-x: scroll;
+  width: max-content;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.midAbout {
+  align-items: center;
+  position: relative;
+}
+.sliderComp {
+  width: 100vw !important;
+  height: 500px;
+  display: inline-block;
+  background-color: #005b6b;
+  border: 1px solid black;
+}

@@ -1,6 +1,5 @@
 import "./styles/footer.css"
 import logo from "./assets/Asset 1.png"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 function Footer() {
 
     const scrollToTop = () => {
@@ -38,8 +37,9 @@ function Footer() {
                     <label htmlFor="email">E-mail<span className="req">*</span><br/>
                         <input placeholder="Email" id="email" type="email" required />
                     </label>
-                    <label htmlFor="phone">Phone<span className="req">*</span><br/>
-                        <input placeholder="Phone" id="phone" type="phone" required />
+                    
+                    <label htmlFor="message">Message<span className="req">*</span><br/>
+                        <textarea placeholder="Message" id="message"  cols={22} rows={3} required ></textarea>
                     </label>
                     <button className="btn" type="submit">Send</button>
                 </form>

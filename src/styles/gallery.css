@@ -1,0 +1,42 @@
+.mainGall {
+  margin: 0;
+  padding: 0;
+  background-color: #11696b;
+  width: 100vw;
+  height: 170vh;
+}
+.mainPic {
+  height: 50em;
+  width: 100%;
+  background-image: url("../assets/images/extension.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainPic::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.493);
+  backdrop-filter: blur (2px);
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.BluLogo {
+  position: absolute;
+}
+.galleryGal {
+  height: 110em;
+  width: 100%;
+  margin-right: 20px;
+
+  background-color: #11696b;
+}
+.imag {
+  transition: 0.5s;
+}
+.imag:hover {
+  scale: 1.01;
+  cursor: pointer;
+}

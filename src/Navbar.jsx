@@ -27,6 +27,10 @@ function Navbar() {
           };
         }, []);
   
+        const scrollToTop = () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
     return (
         <nav className={classN}>
             <div className="navbar" >
@@ -35,11 +39,11 @@ function Navbar() {
                 </div>
                 <div className="menu">
                     <ul  className="menu-navbar">
-                       <li><NavLink to="/">HOME</NavLink></li>
-                       <li><NavLink to="/gallery">GALLERY</NavLink></li>
-                       <li><NavLink to="/shop">SHOP</NavLink></li>
-                       <li><NavLink to="/about">ABOUT US</NavLink></li>
-                       <li><NavLink to="/contact">CONTACT</NavLink></li>
+                       <li onClick={scrollToTop} ><NavLink to="/">HOME</NavLink></li>
+                       <li onClick={scrollToTop}><NavLink to="/gallery">GALLERY</NavLink></li>
+                       <li onClick={scrollToTop}><NavLink to="/shop">SHOP</NavLink></li>
+                       <li onClick={scrollToTop}><NavLink to="/about">ABOUT US</NavLink></li>
+                       <li onClick={scrollToTop}><NavLink to="/contact">CONTACT</NavLink></li>
                         <Outlet/>
                     </ul>
                 </div>
