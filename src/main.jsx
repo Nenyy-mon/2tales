@@ -6,6 +6,8 @@ import Gallery from './Pages/Gallery'
 import AboutUs from './Pages/AboutUs'
 // eslint-disable-next-line react-refresh/only-export-components
 const MainPage = lazy(() => import('./MainPage'))
+// eslint-disable-next-line react-refresh/only-export-components
+const Scrolling = lazy(() => import('./Pages/Scrolling'))
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/gallery" element={<Gallery/>} />
       <Route path="/shop" element={<MainPage/>} />
       <Route path="/about" element={<AboutUs/>} />
-      <Route path="/contact" element={<MainPage/>} />
+      <Route path="/contact" element={<Scrolling/>} />
     </Routes>
    </main>
     </BrowserRouter>

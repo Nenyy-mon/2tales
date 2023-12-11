@@ -1,10 +1,10 @@
-import { lazy, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles/middle.css"
+import Scrolling from "./Pages/Scrolling";
 // import Tabs from "./Tabs";
-const Tabs = lazy(()=> import('./Tabs'))
-
 
 function Middle() {
+    // eslint-disable-next-line no-unused-vars
     const [scrollY, setScrollY] = useState(0);
 
     const handleScroll = () => {
@@ -58,9 +58,7 @@ function Middle() {
                 <img  onScroll={handleScroll} className="waveFour wav" src="./src/assets/waves/Rectangle 2.svg" alt="wave" />
              </div>
         </div>
-        <div className="tabes">
-        <Tabs/>
-        </div>
+        <Scrolling/>
         </div>
     )
 }

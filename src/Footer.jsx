@@ -8,7 +8,7 @@ function Footer() {
 
     return (
         <div className="footer">
-            <button onClick={ scrollToTop}  className="up"><img src="./src/assets/arrow-up.png" alt="arrowUp" width="30px" className="arrow" /></button>
+           
             <div className="upper-footer">
                 <img width="80" src={logo} alt="" className="logo-footer" />
             </div>
@@ -45,6 +45,7 @@ function Footer() {
                 </form>
                 </div>
             </div>
+            <button onClick={ scrollToTop}  className="up"><img src="./src/assets/arrow-up.png" alt="arrowUp" width="30px" className="arrow" /></button>
         </div>
     )
 }

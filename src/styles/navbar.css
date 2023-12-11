@@ -8,14 +8,13 @@
   position: fixed;
   display: flex;
   width: 100%;
-  padding-left: 100px;
+  padding-left: 150px;
   transition: 0.5s;
   z-index: 3000;
 }
 .scrolled {
   position: fixed;
-  padding-left: 100px;
-
+  padding-left: 150px;
   display: flex;
   width: 100%;
   background-color: #11696b;
@@ -23,14 +22,14 @@
   z-index: 10001;
 }
 .logo-navbar {
-  padding: 10px;
+  padding: 5px;
 }
 .navbar {
   display: flex;
   width: 55%;
 }
 .language-navbar {
-  width: 30%;
+  width: 27%;
   display: flex;
   justify-content: end;
 }

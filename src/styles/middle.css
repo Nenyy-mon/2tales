@@ -34,11 +34,11 @@ div.bottle-image {
 }
 div.text {
   color: white;
-  width: 30%;
-  padding: 50px;
-  padding-right: 150px;
+  width: 40%;
+  padding: 70px;
+  padding-right: 170px;
   height: 700px;
-  font-size: 2.8em;
+  font-size: 3vw;
   text-transform: uppercase;
   text-align: right;
   padding-top: 0;

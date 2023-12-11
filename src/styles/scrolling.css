@@ -1,0 +1,59 @@
+body {
+  height: 700px;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.london {
+  background-image: url("../assets/images/desktop london dry.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(133, 201, 209);
+}
+.pCont {
+  width: 100vw;
+  font-size: 2vw;
+  padding: 40px;
+  padding-right: 10%;
+  padding-left: 45%;
+}
+div.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw !important;
+  box-sizing: border-box;
+}
+.pink {
+  background-image: url("../assets/images/dektop_pink.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f294c0;
+}
+.ginger {
+  background-image: url("../assets/images/desktop_ginger.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(191, 75, 3);
+}
+.coffee {
+  background-image: url("../assets/images/desktop_coffee.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(79, 30, 0);
+}
+.vodka {
+  background-image: url("../assets/images/desktop_vodka.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(77, 59, 140);
+}
