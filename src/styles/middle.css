@@ -36,7 +36,7 @@ div.text {
   color: white;
   width: 40%;
   padding: 70px;
-  padding-right: 170px;
+  padding-right: 10%;
   height: 700px;
   font-size: 3vw;
   text-transform: uppercase;
@@ -162,4 +162,60 @@ div.text {
 }
 .useAnimate3 {
   animation: slide 4s ease-in-out 1s;
+}
+@media (max-width: 920px) {
+  div.bottle-image {
+    background-position: left 40% top 0%;
+    background-size: cover;
+    height: 120vh;
+  }
+  .svgs {
+    position: absolute;
+    top: 900px;
+    width: 100%;
+  }
+  .waveOne {
+    width: 180%;
+    margin-top: -180px;
+  }
+  .waveTwo {
+    margin-top: -160px;
+    width: 180%;
+  }
+  .waveThree {
+    width: 180%;
+    margin-top: -150px;
+  }
+  .waveFour {
+    width: 180%;
+    margin-top: -300px;
+  }
+}
+@media (max-width: 680px) {
+  div.bottle-image {
+    background-position: left 50% top 20%;
+    background-size: cover;
+    height: 100vh;
+  }
+  .svgs {
+    position: absolute;
+    top: 500px;
+    width: 120%;
+  }
+  .waveOne {
+    width: 280%;
+    margin-top: -150px;
+  }
+  .waveTwo {
+    margin-top: -90px;
+    width: 280%;
+  }
+  .waveThree {
+    width: 180%;
+    margin-top: -50px;
+  }
+  .waveFour {
+    width: 280%;
+    margin-top: -60px;
+  }
 }

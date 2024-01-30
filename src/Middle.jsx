@@ -40,6 +40,7 @@ function Middle() {
       };
     }, []);
     return (
+      
         <div className="all">
         <div className="bottle-image">
             <div className="text"><p>

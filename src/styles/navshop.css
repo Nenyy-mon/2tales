@@ -1,0 +1,56 @@
+.nav-shop {
+  background-color: white;
+  color: #11696b;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  position: fixed;
+}
+
+.colored {
+  color: #11696b !important;
+  font-weight: 700 !important;
+}
+.links {
+  padding: 10px;
+  padding-right: 5rem;
+  display: flex;
+  width: 50vw;
+
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+.pic {
+  padding: 10px;
+}
+.language-shop {
+  width: 5vw;
+}
+.language-navbar {
+  width: fit-content;
+}
+p.language-p {
+  padding-left: 0 !important;
+}
+.carted {
+  text-decoration: none;
+  padding: 0.3em !important;
+  width: 1.3em !important;
+  height: 1.3em !important;
+  font-size: 0.7em !important;
+  background-color: #11696b;
+  color: aliceblue;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.cartes {
+  display: flex;
+  align-items: center;
+}

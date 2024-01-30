@@ -16,9 +16,9 @@ function Footer() {
                 <div className="contact-div">
                 <h2 className="contact-head">CONTACT US:</h2><br/><br/>
                 <p className="contact-p">
-                Phone: <a href="tel:+381 612222397">+381 612222<span className="num">3</span>97</a> <br/>
-                Phone: <a href="tel:+381 612222497">+381 612222<span className="num">4</span>97</a> <br/>
-                Email: <a href="mailto:office@2tales.rs">office@<span className="num">2tales</span>.rs</a> <br/>
+                Phone: <a  className=" linked" href="tel:+381 612222397">+381 612222<span className="num">3</span>97</a> <br/>
+                Phone: <a className=" linked" href="tel:+381 612222497">+381 612222<span className="num">4</span>97</a> <br/>
+                Email: <a className=" linked" href="mailto:office@2tales.rs">office@<span className="num">2tales</span>.rs</a> <br/>
                 Follow us on: <br/><br/>
                 <a className="aig"  href="https://www.instagram.com/2tales_spirits/" target="_blank" rel="noreferrer"><img src="./src/assets/instagram.png" alt="Instagram" width="20px" /></a>
                 <a className="afa" target="_blank" href="https://www.facebook.com/profile.php?id=100069385623493" rel="noreferrer"><img src="./src/assets/facebook.png" alt="Facebook" width="20px" /></a>

@@ -1,13 +1,15 @@
-import React, { lazy } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './styles/index.css'
+import "./styles/scrollbar.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Gallery from './Pages/Gallery'
-import AboutUs from './Pages/AboutUs'
-// eslint-disable-next-line react-refresh/only-export-components
-const MainPage = lazy(() => import('./MainPage'))
-// eslint-disable-next-line react-refresh/only-export-components
-const Scrolling = lazy(() => import('./Pages/Scrolling'))
+
+import MainPage from "./MainPage.jsx"
+import Gallery from './Pages/Gallery.jsx'
+import AboutUs from './Pages/AboutUs.jsx'
+import Shop from './Pages/Shop.jsx'
+import Cart from './Pages/Cart.jsx'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -16,10 +18,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Routes>
       <Route path="/" element={<MainPage/>} /> 
       <Route path="/2tales" element={<MainPage/>} /> 
-      <Route path="/gallery" element={<Gallery/>} />
-      <Route path="/shop" element={<MainPage/>} />
-      <Route path="/about" element={<AboutUs/>} />
-      <Route path="/contact" element={<Scrolling/>} />
+      <Route path="/2tales/gallery" element={<Gallery/>} />
+      <Route path="/2tales/shop" element={<Shop/>} />
+      <Route path="/2tales/about" element={<AboutUs/>} />
+      <Route path="/2tales/shop" element={<Shop/>} />
+      <Route path="/2tales/cart" element={<Cart/>} />
     </Routes>
    </main>
     </BrowserRouter>

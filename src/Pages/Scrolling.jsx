@@ -18,7 +18,7 @@ function Scrolling() {
                 pin: true,
                 scrub: 1,
                 snap: 1 / (sections.length - 1),
-                markers: true,
+                markers: false,
                 end: () => `+=${contentRef.current.offsetWidth }`, 
             },
         });

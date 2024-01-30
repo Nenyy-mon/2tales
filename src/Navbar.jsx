@@ -4,7 +4,10 @@ import logo from "./assets/Asset 1.png"
 import { useEffect, useState } from 'react';
 function Navbar() {
     const [classN, setClassN] = useState('nav-bar');
-    
+    const [isMenuOpen, setMenuOpen] = useState(false);
+  const handleBurgerClick = () => {
+    setMenuOpen(!isMenuOpen);
+  };
 
 
     
@@ -33,28 +36,33 @@ function Navbar() {
 
     return (
         <nav className={classN}>
-            <div className="navbar" >
+            <div id="burger-menu"  className={isMenuOpen ? 'close' : ''} onClick={handleBurgerClick} >
+                <span></span>
+            </div>
+            <div className="navbar"  >
                 <div className="logo-navbar">
                     <img width="150" src={logo} alt="" />
                 </div>
-                <div className="menu">
+                <div className={!isMenuOpen ? 'closed' : 'menu'}>
                     <ul  className="menu-navbar">
-                       <li onClick={scrollToTop} ><NavLink to="/">HOME</NavLink></li>
-                       <li onClick={scrollToTop}><NavLink to="/gallery">GALLERY</NavLink></li>
-                       <li onClick={scrollToTop}><NavLink to="/shop">SHOP</NavLink></li>
-                       <li onClick={scrollToTop}><NavLink to="/about">ABOUT US</NavLink></li>
-                       <li onClick={scrollToTop}><NavLink to="/contact">CONTACT</NavLink></li>
+                       <li onClick={scrollToTop} ><NavLink className='linked' to="/">HOME</NavLink></li>
+                       <li onClick={scrollToTop}><NavLink className='linked' to="/2tales/gallery">GALLERY</NavLink></li>
+                       <li onClick={scrollToTop}><NavLink className='linked' to="/2tales/shop">SHOP</NavLink></li>
+                       <li onClick={scrollToTop}><NavLink className='linked' to="/2tales/about">ABOUT US</NavLink></li>
+                       
                         <Outlet/>
                     </ul>
-                </div>
-            </div>
-            <div className="language-navbar">
+                    <div className="language-navbar">
                 <p className="language-p">
                     <span className='srb active'>SRB</span>
                     /
                     <span className='en'>ENG</span>
                 </p>
             </div>
+                </div>
+            </div>
+           
+            
         </nav>
     )
 }
