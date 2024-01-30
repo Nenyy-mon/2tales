@@ -1,5 +1,6 @@
 import "./styles/footer.css"
 import logo from "./assets/Asset 1.png"
+import up from './assets/arrow-up.png'
 function Footer() {
 
     const scrollToTop = () => {
@@ -45,7 +46,7 @@ function Footer() {
                 </form>
                 </div>
             </div>
-            <button onClick={ scrollToTop}  className="up"><img src="./src/assets/arrow-up.png" alt="arrowUp" width="30px" className="arrow" /></button>
+            <button onClick={ scrollToTop}  className="up"><img src={up} alt="arrowUp" width="30px" className="arrow" /></button>
         </div>
     )
 }
