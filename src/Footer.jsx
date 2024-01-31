@@ -1,6 +1,6 @@
 import "./styles/footer.css"
 import logo from "./assets/Asset 1.png"
-import up from '/home/runner/work/2tales/2tales/src/assets/arrow-up.png'
+import up from './assets/arrow-up.png'
 function Footer() {
 
     const scrollToTop = () => {
