@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import "./styles/middle.css"
 import Scrolling from "./Pages/Scrolling";
 // import Tabs from "./Tabs";
-import wave1 from "./assets/waves/Ellipse 1.svg"
-import wave2 from "./assets/waves/Ellipse 2.svg"
-import wave3 from "./assets/waves/Ellipse 2 Copy.svg"
-import wave4 from "./assets/waves/Rectangle 2.svg"
+import wave1 from "../src/assets/waves/Ellipse 1.svg"
+import wave2 from "../src/assets/waves/Ellipse 2.svg"
+import wave3 from "../src/assets/waves/Ellipse 2 Copy.svg"
+import wave4 from "../src/assets/waves/Rectangle 2.svg"
 function Middle() {
     // eslint-disable-next-line no-unused-vars
     const [scrollY, setScrollY] = useState(0);
