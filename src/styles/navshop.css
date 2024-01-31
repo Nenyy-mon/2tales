@@ -13,16 +13,24 @@
 .colored {
   color: #11696b !important;
   font-weight: 700 !important;
+  text-decoration: none;
 }
 .links {
-  padding: 10px;
-  padding-right: 5rem;
+  padding-right: 15rem;
   display: flex;
   width: 50vw;
 
   justify-content: space-between;
   height: 100px;
   align-items: center;
+}
+.menu-navbars {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  list-style: none;
+
+  align-items: center !important;
 }
 .pic {
   padding: 10px;
@@ -32,6 +40,7 @@
 }
 .language-navbar {
   width: fit-content;
+  padding-right: 30px;
 }
 p.language-p {
   padding-left: 0 !important;
@@ -39,18 +48,153 @@ p.language-p {
 .carted {
   text-decoration: none;
   padding: 0.3em !important;
-  width: 1.3em !important;
-  height: 1.3em !important;
+  width: 1em !important;
+  height: 1em !important;
   font-size: 0.7em !important;
   background-color: #11696b;
-  color: aliceblue;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
+  color: #d19c3a;
+  border-radius: 20px !important;
+  display: flex !important;
+  justify-content: center !important;
 
   align-items: center;
 }
 .cartes {
   display: flex;
   align-items: center;
+}
+
+.active::after {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .menu-navbars {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+  }
+  #burger-menus {
+    display: block;
+    cursor: pointer;
+    height: 27px;
+    width: 32px;
+    margin: 30px;
+    margin-left: -30px;
+    overflow: visible;
+    position: absolute;
+    z-index: 2000;
+    transition: 500ms;
+    margin-right: 130px;
+  }
+  div.menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    position: absolute;
+    left: 0;
+    margin-left: -200px;
+    top: 100%;
+    background-color: #11696b;
+    transition: 0.5s;
+  }
+  #burger-menus span,
+  #burger-menus span:before,
+  #burger-menus span:after {
+    background: #d19c3a;
+    display: block;
+    height: 2px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+  }
+
+  #burger-menus span:before,
+  #burger-menus span:after {
+    content: "";
+  }
+
+  #burger-menus span:before {
+    left: 0px;
+    top: -10px;
+    width: 27px;
+  }
+
+  #burger-menus span {
+    left: 50px;
+    top: 26px;
+    width: 27px;
+  }
+
+  #burger-menus span:after {
+    left: 0px;
+    top: 10px;
+    width: 27px;
+  }
+
+  #burger-menus.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+  }
+
+  #burger-menus.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+  }
+
+  #burger-menus.close span:after {
+    top: 0px;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+  }
+  .nav-shop {
+    position: absolute;
+    display: flex;
+  }
+
+  .nav-shop {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+  .logopic {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    position: relative;
+  }
+  .logopic {
+    width: 8em;
+    padding: 15px;
+  }
+  div.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    gap: 10px;
+    height: fit-content;
+    position: absolute;
+    justify-content: space-around;
+    left: 0;
+    top: 100%;
+    padding-right: 20px;
+    background-color: white;
+    transition: 0.5s;
+  }
+  .links {
+    flex-direction: row;
+    gap: 4px;
+  }
+  .language-navbar {
+    padding-left: 0px;
+    padding-right: 15px;
+  }
 }

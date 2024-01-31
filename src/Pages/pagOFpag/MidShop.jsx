@@ -5,7 +5,7 @@ import { useState } from "react"
 
 function MidShop() {
    return  (
-    
+        
         <div className="maine">
            {prices.map((price) => {
             const [add,setAdd] = useState(0)

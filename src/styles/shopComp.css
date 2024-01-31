@@ -2,8 +2,7 @@
   background-color: #0e5657;
   /* width: fit-content;
   height: fit-content; */
-  padding: 20px;
-  width: 16%;
+  width: fit-content !important;
   display: flex;
   flex-direction: column;
   border-radius: 11px;
@@ -15,16 +14,10 @@
   letter-spacing: 1px;
 }
 
-.divuP {
-  height: 200px;
-  width: 100%;
-  background-color: #11696b;
-}
 .bottle {
-  width: 300px;
+  width: 19em;
   object-fit: cover;
   border-radius: 2px;
-  margin-top: 20px;
 }
 
 .carte {

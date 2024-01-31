@@ -11,7 +11,6 @@ function Shop() {
             <NavShop/>
             <NewShop/>
             <MidShop />
-            <ComponentSelf/>
             <Footer/>
         </div>
     )

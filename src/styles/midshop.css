@@ -7,16 +7,22 @@ body {
   flex-direction: column;
   flex-flow: row wrap;
   gap: 5px;
+  height: fit-content;
   padding: 10px;
-  padding-top: 130px;
   background-color: #094b4c;
+  justify-content: center;
+  align-items: center;
 }
 .maines {
   background-color: hsl(181, 73%, 24%);
   display: flex;
+  flex-flow: row wrap;
   flex-direction: column;
   padding: 10px;
   padding-top: 130px;
+  justify-content: center;
+  gap: 200px !important;
+  align-items: center;
 }
 h1 {
   align-self: center;
