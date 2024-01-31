@@ -2,10 +2,6 @@ import { useEffect, useState } from "react";
 import "./styles/middle.css"
 import Scrolling from "./Pages/Scrolling";
 // import Tabs from "./Tabs";
-import wave1 from "./assets/waves/Ellipse 1.svg"
-import wave2 from "./assets/waves/Ellipse 2.svg"
-import wave3 from "./assets/waves/Ellipse 2 Copy.svg"
-import wave4 from "./assets/waves/Rectangle 2.svg"
 function Middle() {
     // eslint-disable-next-line no-unused-vars
     const [scrollY, setScrollY] = useState(0);
@@ -56,15 +52,30 @@ function Middle() {
            
             </div>  
             <div className="svgs">
-                <img onScroll={handleScroll}  className="waveOne wav" src={wave1} alt="wave" />
-                <img onScroll={handleScroll}  className="waveTwo wav" src={wave2} alt="wave" />
-                <img onScroll={handleScroll}  className="waveThree wav" src={wave3} alt="wave" />
-                <img  onScroll={handleScroll} className="waveFour wav" src={wave4} alt="wave" />
+                <img onScroll={handleScroll}  className="waveOne wav" src={images.imgWave1} alt="wave" />
+                <img onScroll={handleScroll}  className="waveTwo wav" src={images.imgWave2} alt="wave" />
+                <img onScroll={handleScroll}  className="waveThree wav" src={images.imgWave3} alt="wave" />
+                <img  onScroll={handleScroll} className="waveFour wav" src={images.imgWave4} alt="wave" />
              </div>
         </div>
         <Scrolling/>
         </div>
     )
 }
+
+const images = [
+  {
+      imgWave1: require('./assets/waves/Ellipse 1.svg'),
+  },
+  {
+    imgWave2: require('./assets/waves/Ellipse 2.svg'),
+  },
+  {
+    imgWave3: require('./assets/waves/Ellipse 2 Copy.svg'),
+  },
+  {
+    imgWave4: require('./assets/waves/Rectangle 2.svg'),
+  },
+]
 
 export default Middle
