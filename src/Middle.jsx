@@ -3,7 +3,6 @@ import "./styles/middle.css"
 import Scrolling from "./Pages/Scrolling";
 import imgWave1 from './assets/waves/Ellipse 1.svg'
   import imgWave2 from './assets/waves/Ellipse 2.svg'
-  import imgWave3 from './assets/waves/Ellipse 2 Copy.svg'
   import imgWave4 from './assets/waves/Rectangle 2.svg'
 // import Tabs from "./Tabs";
 function Middle() {
@@ -70,7 +69,7 @@ function Middle() {
             <div className="svgs">
                 <img onScroll={handleScroll}  className="waveOne wav" src={imgWave1} alt="wave" />
                 <img onScroll={handleScroll}  className="waveTwo wav" src={imgWave2} alt="wave" />
-                <img onScroll={handleScroll}  className="waveThree wav" src={imgWave3} alt="wave" />
+                <img onScroll={handleScroll}  className="waveThree wav" src={imgWave1} alt="wave" />
                 <img  onScroll={handleScroll} className="waveFour wav" src={imgWave4} alt="wave" />
              </div>
         </div>
