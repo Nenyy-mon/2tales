@@ -4,6 +4,7 @@ html {
   font-family: "Ignotum";
   padding: 0;
   width: 100vw;
+  overflow-x: hidden;
 }
 .mainPage {
   width: 100vw;
