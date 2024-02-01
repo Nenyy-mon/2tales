@@ -244,7 +244,6 @@ p.language-p {
     padding-right: 0 !important;
     margin-right: 0 !important;
     position: absolute !important;
-    overflow-x: hidden !important;
     display: flex;
     background: rgb(17, 105, 107);
     background: linear-gradient(
