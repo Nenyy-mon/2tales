@@ -1,6 +1,6 @@
 import "./styles/footer.css"
 import logo from "./assets/Asset 1.png"
-
+import image from './assets/arrow-up.png'
 function Footer() {
 
     const scrollToTop = () => {
@@ -46,15 +46,10 @@ function Footer() {
                 </form>
                 </div>
             </div>
-            <button onClick={ scrollToTop}  className="up"><img src={image.image} alt="arrowUp" width="30px" className="arrow" /></button>
+            <button onClick={ scrollToTop}  className="up"><img src={image} alt="arrowUp" width="30px" className="arrow" /></button>
         </div>
     )
 }
 
-const image = [
-    {
-        image: require('./assets/arrow-up.png')
-    }
-]
 
 export default Footer

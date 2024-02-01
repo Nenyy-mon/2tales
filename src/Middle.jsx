@@ -1,16 +1,22 @@
 import { useEffect, useState } from "react";
 import "./styles/middle.css"
 import Scrolling from "./Pages/Scrolling";
+import imgWave1 from './assets/waves/Ellipse 1.svg'
+  import imgWave2 from './assets/waves/Ellipse 2.svg'
+  import imgWave3 from './assets/waves/Ellipse 2 Copy.svg'
+  import imgWave4 from './assets/waves/Rectangle 2.svg'
 // import Tabs from "./Tabs";
 function Middle() {
     // eslint-disable-next-line no-unused-vars
     const [scrollY, setScrollY] = useState(0);
-
     const handleScroll = () => {
       const elements = document.querySelector(".wav");
       if (elements) {
         elements.classList.add("useAnimate");
         setScrollY(window.scrollY);
+      } 
+      if(window.scrollY == 0) {
+        elements.classList.remove('useAnimate')
       }
     
     const elementi = document.querySelector(".waveTwo");
@@ -18,16 +24,26 @@ function Middle() {
         elementi.classList.add("useAnimate1");
       setScrollY(window.scrollY);
     }
-  
+    if(window.scrollY == 0) {
+      elementi.classList.remove('useAnimate1')
+    }
   const elemento = document.querySelector(".waveThree");
     if (elemento) {
         elemento.classList.add("useAnimate2");
       setScrollY(window.scrollY);
     }
+    if(window.scrollY == 0) {
+      elemento.classList.remove('useAnimate2')
+    }
+
+
     const elementsi = document.querySelector(".waveFour");
     if (elementsi) {
         elementsi.classList.add("useAnimate3");
       setScrollY(window.scrollY);
+    }
+    if(window.scrollY == 0) {
+      elementsi.classList.remove('useAnimate3')
     }
 }
 
@@ -52,10 +68,10 @@ function Middle() {
            
             </div>  
             <div className="svgs">
-                <img onScroll={handleScroll}  className="waveOne wav" src={images.imgWave1} alt="wave" />
-                <img onScroll={handleScroll}  className="waveTwo wav" src={images.imgWave2} alt="wave" />
-                <img onScroll={handleScroll}  className="waveThree wav" src={images.imgWave3} alt="wave" />
-                <img  onScroll={handleScroll} className="waveFour wav" src={images.imgWave4} alt="wave" />
+                <img onScroll={handleScroll}  className="waveOne wav" src={imgWave1} alt="wave" />
+                <img onScroll={handleScroll}  className="waveTwo wav" src={imgWave2} alt="wave" />
+                <img onScroll={handleScroll}  className="waveThree wav" src={imgWave3} alt="wave" />
+                <img  onScroll={handleScroll} className="waveFour wav" src={imgWave4} alt="wave" />
              </div>
         </div>
         <Scrolling/>
@@ -63,19 +79,6 @@ function Middle() {
     )
 }
 
-const images = [
-  {
-      imgWave1: require('./assets/waves/Ellipse 1.svg'),
-  },
-  {
-    imgWave2: require('./assets/waves/Ellipse 2.svg'),
-  },
-  {
-    imgWave3: require('./assets/waves/Ellipse 2 Copy.svg'),
-  },
-  {
-    imgWave4: require('./assets/waves/Rectangle 2.svg'),
-  },
-]
+
 
 export default Middle

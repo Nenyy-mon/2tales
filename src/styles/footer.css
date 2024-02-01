@@ -172,36 +172,40 @@ span.req {
 }
 
 @media (max-width: 770px) {
+  body {
+    overflow-x: hidden;
+  }
   .footer {
-    height: 160vh;
+    align-items: center !important;
+    justify-content: space-around;
   }
   .upper-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -40px;
-    margin-bottom: -50px;
+  }
+  .aig,
+  .afa {
+    font-size: smaller;
   }
   .down-footer {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 30%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
     color: white;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
   }
   .text-p {
     text-align: center;
-    vertical-align: middle;
     display: flex;
-    justify-content: center;
     align-items: center;
     color: white;
     margin: 0;
     font-size: 0.2em;
-    width: 40%;
+    width: 30%;
   }
   .about-div {
     display: flex;
@@ -214,13 +218,18 @@ span.req {
   }
   .contact-div {
     height: fit-content;
+    margin-top: 10em;
   }
   .contact-head {
     margin: 0;
+    text-align: center;
     margin-top: 4em;
+    font-size: x-small;
+    text-align: center;
   }
   .contact-p {
     margin: 0;
+    font-size: xx-small;
     padding: 0;
   }
   .contact-p a {
@@ -231,25 +240,34 @@ span.req {
   .about-div {
     margin: 0;
     padding: 0;
+    padding-top: 1em;
   }
   .about-head {
-    font-size: 1em;
+    font-size: 0.7em;
   }
   .about-p {
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 0.6em;
     margin-top: -60px !important;
     text-align: center;
     margin: 0;
     font-weight: 500;
+    width: 60%;
     word-wrap: normal;
+  }
+  .sndmsg-div {
+    padding-top: 1em;
   }
   .sndmsg-head {
     font-size: 1em;
+    margin-top: 2em;
+    font-size: 0.7em;
+    text-align: center;
   }
   form {
     display: flex;
     flex-direction: column;
+    padding-top: 1em;
   }
   .num {
     color: #d19c3a;
@@ -257,6 +275,7 @@ span.req {
   }
   label {
     padding: 1px;
+    font-size: x-small;
   }
   input,
   textarea {
@@ -266,6 +285,26 @@ span.req {
     padding-left: 1px;
     padding-right: 1px;
     border-radius: 5px;
+    font-size: 0.9em;
     color: #11696b !important;
+  }
+  .btn {
+    font-size: x-small;
+  }
+  .up {
+    margin-top: 20em;
+    align-self: center;
+    margin-left: 1em;
+    width: 2em;
+    height: 2em;
+  }
+  .arrow {
+    width: 1em;
+  }
+  .logo-footer {
+    width: 3em;
+    margin: 0;
+    margin-bottom: 10em;
+    padding-left: 2.5em;
   }
 }

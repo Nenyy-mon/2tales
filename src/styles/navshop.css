@@ -15,8 +15,9 @@
   font-weight: 700 !important;
   text-decoration: none;
 }
-.links {
-  padding-right: 15rem;
+.links,
+.menus {
+  padding-right: 2rem;
   display: flex;
   width: 50vw;
 
@@ -67,7 +68,7 @@ p.language-p {
 .active::after {
   display: none;
 }
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .menu-navbars {
     display: flex;
     flex-direction: column;
