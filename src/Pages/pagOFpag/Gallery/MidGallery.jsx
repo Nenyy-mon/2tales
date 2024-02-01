@@ -1,5 +1,5 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
-import bluLogo from "../../assets/bluelogo.png"
+import bluLogo from "../../../assets/bluelogo.png"
 function MidGallery() {
 
     const images = [

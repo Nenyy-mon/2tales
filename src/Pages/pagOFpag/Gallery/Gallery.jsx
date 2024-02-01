@@ -1,7 +1,7 @@
-import Footer from "../Footer"
-import Navbar from "../Navbar"
-import "../styles/gallery.css"
-import MidGallery from "./pagOFpag/MidGallery"
+import Footer from "../../../Footer"
+import Navbar from "../../../Navbar"
+import "../../../styles/gallery.css"
+import MidGallery from "./MidGallery"
 
 function Gallery() {
     return (

@@ -1,6 +1,6 @@
-import Footer from "../Footer"
-import Navbar from "../Navbar"
-import MidAbout from "./pagOFpag/MidAbout"
+import Footer from "../../../Footer"
+import Navbar from "../../../Navbar"
+import MidAbout from "./MidAbout"
 
 function AboutUs() {
     return (

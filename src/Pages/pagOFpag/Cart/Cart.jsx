@@ -1,6 +1,6 @@
-import Footer from "../Footer"
-import NavShop from "./Shop/NavShop"
-import MidCart from "./pagOFpag/MidCart"
+import Footer from "../../../Footer"
+import NavShop from "../../Shop/NavShop"
+import MidCart from "./MidCart"
 
 function Cart() {
     return (

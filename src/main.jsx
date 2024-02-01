@@ -5,10 +5,10 @@ import "./styles/scrollbar.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import MainPage from "./MainPage.jsx"
-import Gallery from './Pages/Gallery.jsx'
-import AboutUs from './Pages/AboutUs.jsx'
-import Shop from './Pages/Shop.jsx'
-import Cart from './Pages/Cart.jsx'
+import Gallery from './Pages/pagOFpag/Gallery/Gallery.jsx'
+import AboutUs from './Pages/pagOFpag/About/AboutUs.jsx'
+import Shop from './Pages/Shop/Shop.jsx'
+import Cart from './Pages/pagOFpag/Cart/Cart.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
