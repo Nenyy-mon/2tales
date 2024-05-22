@@ -24,7 +24,6 @@ const uri = process.env.DB_URI;
 const cartApi = process.env.CART_API;
 const PORT = process.env.PORT || 3000;
 
-connectDB()
 
 
 
