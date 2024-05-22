@@ -6,8 +6,9 @@
   "main": "app.js",
   "scripts": {
     "test": "node --test",
-    "start": "nodemon index.js",
-    "dev": "nodemon backend"
+    "start": "node index.js",
+    "dev": "nodemon backend",
+    "server": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
