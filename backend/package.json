@@ -1,7 +1,7 @@
 {
   "name": "2tales-shop",
   "version": "1.0.0",
-  "proxy": "https://2tales-wkf4-imsqngi0u-nenyy-mons-projects.vercel.app/",
+  "proxy": "https://2tales-wkf4.vercel.app/",
   "description": "backend for 2tales shop site",
   "main": "app.js",
   "scripts": {
