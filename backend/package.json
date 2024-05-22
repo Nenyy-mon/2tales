@@ -9,8 +9,8 @@
     "start": "node index.js",
     "dev": "nodemon backend",
     "server": "nodemon index.js",
-    "build": "next build"
-  },
+    "vercel-build": "node ./build.js"
+    },
   "author": "",
   "license": "ISC",
   "dependencies": {
