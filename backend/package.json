@@ -8,8 +8,7 @@
     "test": "node --test",
     "start": "node index.js",
     "dev": "nodemon backend",
-    "server": "nodemon index.js",
-    "vercel-build": "node ./build.js"
+    "server": "nodemon index.js"
     },
   "author": "",
   "license": "ISC",
