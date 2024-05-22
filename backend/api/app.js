@@ -22,6 +22,7 @@ const apicompanyUser = process.env.API_COMPANYUSER
 const apiProfile = process.env.API_PROFILE
 const uri = process.env.DB_URI;
 const cartApi = process.env.CART_API;
+const PORT = process.env.PORT || 3000;
 
 connectDB()
 
@@ -47,13 +48,13 @@ app.use(express.urlencoded({
 
 
 // models 
-const productsRouter = require('./routers/products.js');
-const privateUserRouter = require('./routers/privateUser.js');
-const companyUserRouter = require('./routers/companyUser.js');
-const profileRouter = require('./routers/privateUserProfile.js');
+const productsRouter = require('../routers/products.js');
+const privateUserRouter = require('../routers/privateUser.js');
+const companyUserRouter = require('../routers/companyUser.js');
+const profileRouter = require('../routers/privateUserProfile.js');
 const bodyParser = require('body-parser');
-const privateUser = require('./models/privateUser.js');
-const cartRouter = require('./routers/cart.js')
+const privateUser = require('../models/privateUser.js');
+const cartRouter = require('../routers/cart.js')
 //routes
 app.use(`${apiShop}`, productsRouter)
 app.use(`${apiprivateUser}`, privateUserRouter)
@@ -71,6 +72,6 @@ app.use(bodyParser.urlencoded({
 
 
 app.listen(1534, () => {
-    console.log('server running now on http://localhost:1534')
+    console.log(`server running now on ${PORT}`)
 
 });
