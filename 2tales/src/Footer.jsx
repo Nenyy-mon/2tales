@@ -1,8 +1,8 @@
 import "./styles/footer.css"
 import logo from "./assets/Asset 1.png"
 import image from './assets/arrow-up.png'
-import {instagram} from "./assets/instagram.png";
-import {facebook} from "./assets/facebook.png";
+import instagram from "./assets/instagram.png";
+import facebook from "./assets/facebook.png";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 function Footer() {
