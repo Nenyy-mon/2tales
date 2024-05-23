@@ -36,6 +36,7 @@ function Product(props) {
 
     const { cartFuncs, cartItems} = useContext(ShopContext)
     const {id, name, price, img} = props.data;
+    console.log(img)
     const cartItemAmount = cartItems[id]
     const userSet = localStorage.getItem('userid') !== null;
     const [count,setCount] = useState(0)
