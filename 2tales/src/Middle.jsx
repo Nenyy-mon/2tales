@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 function Middle() {
     // eslint-disable-next-line no-unused-vars
      const {t} = useTranslation()
+    // eslint-disable-next-line no-unused-vars
     const [scrollY, setScrollY] = useState(0);
     const handleScroll = () => {
       const elements = document.querySelector(".wav");

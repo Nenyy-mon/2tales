@@ -20,7 +20,7 @@ function UserLogin() {
                 eMail,
                 password,
               })
-            const response =  axios.post('http://localhost:3000/privateUser/login', 
+            const response =  axios.post('/privateUser/login', 
             data, 
             {headers: 
             {"Content-Type" : "application/json",

@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import { NavLink, Outlet } from "react-router-dom"
 import '../../styles/navshop.css'
 import logo from '../../assets/apple-touch-icon.png'
@@ -17,6 +19,7 @@ function NavShop({
 }) {
     const [classN, setClassN] = useState('nav-shop')
     const [isMenuOpen, setMenuOpen] = useState(false);
+    // eslint-disable-next-line no-unused-vars
     const {getTotalNum} = useContext(ShopContext)
     const {t} = useTranslation();
   

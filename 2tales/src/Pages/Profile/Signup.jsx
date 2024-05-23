@@ -84,7 +84,7 @@ function SignupUser() {
                 postalCode,
                 city,
                 password}
-            const response = await axios.post(`http://localhost:3000/privateUser/signup`, JSON.stringify(data), 
+            const response = await axios.post(`/privateUser/signup`, JSON.stringify(data), 
             {
              headers: {
                 'Content-Type': 'application/json',

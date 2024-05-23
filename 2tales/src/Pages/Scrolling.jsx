@@ -2,7 +2,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../styles/scrolling.css'
 import { useRef,useEffect } from "react";
 import gsap from 'gsap';
-import { NavLink, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import { prices } from '../data/prices';
 import axios from '../api/axios';
 import { useTranslation } from 'react-i18next';
@@ -50,6 +50,7 @@ function Scrolling() {
             price,
             img
         }
+        // eslint-disable-next-line no-unused-vars
         const response  = await axios.post('http://localhost:3000/shop/single', JSON.stringify(data),{
             headers: {
                 'Content-Type': 'application/json',

@@ -1,7 +1,7 @@
 // import Footer from "./Footer"
 // import Middle from "./Middle"
 
-import { lazy, useEffect, useState} from "react"
+import { lazy} from "react"
 // import LoadingScreen from "./Pages/LoadingPractice/LoadingScreen"
 
 // import Navbar from "./Navbar"
@@ -14,20 +14,7 @@ const Navbar = lazy(() => import('./Navbar'))
 function MainPage() {
 
 
-    // const [isLoading,setIsLoading] = useState(true)
-
-
-    // useEffect(() => {
-    //     if (document.readyState == 'complete') {
-    //       setIsLoading(false)
-    //     }
-    //   },[])
-
-      // if (isLoading) {
-      //   return (
-      //     <LoadingScreen/>
-      //   )
-      // }
+ 
     return (
         <div className="mainPage">
         <Navbar />
