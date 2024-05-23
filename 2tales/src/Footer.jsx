@@ -1,6 +1,8 @@
 import "./styles/footer.css"
 import logo from "./assets/Asset 1.png"
 import image from './assets/arrow-up.png'
+import {instagram} from './assets/instagram.png'
+import {facebook} from './assets/facebook.png'
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 function Footer() {
@@ -25,8 +27,8 @@ function Footer() {
                 {t("PHONE")}: <a className=" linked" href="tel:+381 612222497">+381 612222<span className="num">4</span>97</a> <br/>
                 {t("EMAIL")}: <a className=" linked" href="mailto:office@2tales.rs">office@<span className="num">2tales</span>.rs</a> <br/>
                 {t("FOLLOW US ON:")} <br/><br/>
-                <a className="aig"  href="https://www.instagram.com/2tales_spirits/" target="_blank" rel="noreferrer"><img src="./assets/instagram.png" alt="Instagram" width="20px" /></a>
-                <a className="afa" target="_blank" href="https://www.facebook.com/profile.php?id=100069385623493" rel="noreferrer"><img src="./assets/facebook.png" alt="Facebook" width="20px" /></a>
+                <a className="aig"  href="https://www.instagram.com/2tales_spirits/" target="_blank" rel="noreferrer"><img src={instagram} alt="Instagram" width="20px" /></a>
+                <a className="afa" target="_blank" href="https://www.facebook.com/profile.php?id=100069385623493" rel="noreferrer"><img src={facebook}alt="Facebook" width="20px" /></a>
                 </p>
                 </div>
                 <div className="about-div">
