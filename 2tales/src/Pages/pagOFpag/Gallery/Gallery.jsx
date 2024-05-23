@@ -4,9 +4,11 @@ import Navbar from "../../../Navbar"
 import "../../../styles/gallery.css"
 import MidGallery from "./MidGallery"
 import LoadingScreen from "../../LoadingPractice/LoadingScreen"
+import { useNavigate } from "react-router-dom"
 
 function Gallery() {
     const [isLoading,setIsLoading] = useState(true)
+    const navigate = useNavigate()
 
 
     useEffect(() => {
@@ -15,7 +17,6 @@ function Gallery() {
                 setIsLoading(false)
             },1000)
         }
-
         const entries = performance.getEntriesByType("navigation");
         entries.forEach((entry) => {
           if (entry.type === "reload") {
@@ -32,6 +33,7 @@ function Gallery() {
           <LoadingScreen/>
         )
       }
+      navigate('/2tales/')
     return (
         <div className="mainGall">
         <Navbar/>
