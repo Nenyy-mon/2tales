@@ -3,6 +3,7 @@
 /* eslint-disable react/prop-types */
 import "../../styles/midshop.css"
 import '../../styles/shopComp.css'
+
 import { useTranslation } from "react-i18next"
 import { ShopContext } from "../../Context/ShopContextProvider";
 import { useContext, useEffect, useState } from "react";
