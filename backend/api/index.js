@@ -11,6 +11,18 @@ app.use(cors({
     origin: true
 }));
 
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "https://virmigo.vercel.app");
+    res.setHeader("Access-Control-Allow-Credentials", "true");
+    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PATCH, DELETE");
+    res.setHeader(
+        "Access-Control-Allow-Headers",
+        "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
+    );
+    next();
+});
+
+
 app.use(cookieParser())
 app.options('*', cors)
 //ENV
@@ -32,6 +44,8 @@ mongoose.connect(uri)
     .catch((err) => {
         console.log(err)
     })
+
+
 
 
 
