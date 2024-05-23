@@ -6,14 +6,12 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const cookieParser = require('cookie-parser')
 app.set("trust proxy", true);
-
 app.use(cors({
     credentials: true,
     origin: true
 }));
 
 app.use(cookieParser())
-
 app.options('*', cors)
 //ENV
 const apiShop = process.env.SHOP_API
@@ -74,3 +72,15 @@ app.listen(1534, () => {
     console.log(`server running now on ${PORT}`)
 
 });
+
+const startServer = () => {
+    try {
+        app.listen(5000, () => {
+            console.log("Server listening on 5000 http://localhost:5000");
+        });
+    } catch (err) {
+        console.log(err)
+    }
+}
+
+startServer();
