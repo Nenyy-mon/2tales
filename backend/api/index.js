@@ -68,10 +68,6 @@ app.use(bodyParser.urlencoded({
 
 
 
-app.listen(1534, () => {
-    console.log(`server running now on ${PORT}`)
-
-});
 
 const startServer = () => {
     try {

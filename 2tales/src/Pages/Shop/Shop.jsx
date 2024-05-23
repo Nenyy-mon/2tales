@@ -6,6 +6,7 @@ import BackgroundImage from "./BackgroundImage.jsx"
 import {  useEffect, useState } from "react"
 import axios from "../../api/axios.js"
 import LoadingScreen from "../LoadingPractice/LoadingScreen.jsx"
+''
 function Shop() {
     const [cartCount, setCartCount] = useState(0)
 
